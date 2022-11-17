@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "642030681194",
+    "project_id": "villages-io-cbb64",
+    "storage_bucket": "villages-io-cbb64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642030681194:android:556bf8db21ee9564ee5e13",
+        "android_client_info": {
+          "package_name": "com.villages.villagesio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642030681194-4sl5nf0vd3phk7rp09ecq6d651uq1k4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOwDQxLUKlSianolpvCZ-JZscNi8c4lCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642030681194-4sl5nf0vd3phk7rp09ecq6d651uq1k4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

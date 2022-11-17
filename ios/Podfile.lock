@@ -1,0 +1,65 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_inappwebview (0.0.1):
+    - Flutter
+    - flutter_inappwebview/Core (= 0.0.1)
+    - OrderedSet (~> 5.0)
+  - flutter_inappwebview/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 5.0)
+  - onesignal_flutter (3.4.2):
+    - Flutter
+    - OneSignalXCFramework (= 3.11.4)
+  - OneSignalXCFramework (3.11.4):
+    - OneSignalXCFramework/OneSignalCore (= 3.11.4)
+    - OneSignalXCFramework/OneSignalExtension (= 3.11.4)
+    - OneSignalXCFramework/OneSignalOutcomes (= 3.11.4)
+  - OneSignalXCFramework/OneSignalCore (3.11.4)
+  - OneSignalXCFramework/OneSignalExtension (3.11.4):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalOutcomes
+  - OneSignalXCFramework/OneSignalOutcomes (3.11.4):
+    - OneSignalXCFramework/OneSignalCore
+  - OrderedSet (5.0.0)
+  - permission_handler_apple (9.0.4):
+    - Flutter
+  - url_launcher_ios (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_inappwebview (from `.symlinks/plugins/flutter_inappwebview/ios`)
+  - onesignal_flutter (from `.symlinks/plugins/onesignal_flutter/ios`)
+  - OneSignalXCFramework (< 4.0, >= 3.4.3)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - OneSignalXCFramework
+    - OrderedSet
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_inappwebview:
+    :path: ".symlinks/plugins/flutter_inappwebview/ios"
+  onesignal_flutter:
+    :path: ".symlinks/plugins/onesignal_flutter/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_inappwebview: bfd58618f49dc62f2676de690fc6dcda1d6c3721
+  onesignal_flutter: bd3bc654bc632e7d6cc8d219a7caebf0592c63e5
+  OneSignalXCFramework: 45932e3c1e659e1485bfd765e0543d7f30cc737b
+  OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
+  permission_handler_apple: 44366e37eaf29454a1e7b1b7d736c2cceaeb17ce
+  url_launcher_ios: 839c58cdb4279282219f5e248c3321761ff3c4de
+
+PODFILE CHECKSUM: 29b1be66da707c398af12c675bfa19dade7ae0d6
+
+COCOAPODS: 1.11.3
