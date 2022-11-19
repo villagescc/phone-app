@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">642030681194-4sl5nf0vd3phk7rp09ecq6d651uq1k4m.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">642030681194</string>
+    <string name="google_api_key" translatable="false">AIzaSyBOwDQxLUKlSianolpvCZ-JZscNi8c4lCY</string>
+    <string name="google_app_id" translatable="false">1:642030681194:android:556bf8db21ee9564ee5e13</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBOwDQxLUKlSianolpvCZ-JZscNi8c4lCY</string>
+    <string name="google_storage_bucket" translatable="false">villages-io-cbb64.appspot.com</string>
+    <string name="project_id" translatable="false">villages-io-cbb64</string>
+</resources>

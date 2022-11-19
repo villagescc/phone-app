@@ -6,6 +6,7 @@ import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+String token = '';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Permission.camera.request();
@@ -15,9 +16,14 @@ Future<void> main() async {
 
   OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
   OneSignal.shared.setAppId('c63122cc-03be-4b63-b767-b581171e2966');
-  OneSignal.shared.promptUserForPushNotificationPermission().then((accepted) {
-    print('accepted permission ${accepted}');
-  });
+  final accepted =
+      await OneSignal.shared.promptUserForPushNotificationPermission();
+  if (accepted) {
+    final deviceState = await OneSignal.shared.getDeviceState();
+    if (deviceState != null) {
+      token = deviceState.userId ?? '';
+    }
+  }
   runApp(const MyApp());
 }
 
@@ -90,6 +96,7 @@ class _MyWebAppState extends State<MyWebApp> {
 
   @override
   Widget build(BuildContext context) {
+    String myHandlerName = 'myHandlerName';
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
@@ -164,6 +171,14 @@ class _MyWebAppState extends State<MyWebApp> {
                     pullToRefreshController: pullToRefreshController,
                     onWebViewCreated: (controller) {
                       webViewController = controller;
+                      controller.addJavaScriptHandler(
+                          handlerName: myHandlerName,
+                          callback: (args) {
+                            print('args${args}');
+                            return {
+                              'token': token,
+                            };
+                          });
                     },
                     onLoadStart: (controller, url) {
                       setState(() {
