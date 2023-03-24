@@ -16,24 +16,24 @@
         <activity
             android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/ThemeTransparent" />
         <activity
             android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/ThemeTransparent" />
         <activity
             android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
-            android:exported="true"
+            android:exported="false"
             android:launchMode="singleInstance"
             android:theme="@style/ThemeTransparent" />
         <activity
             android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
-            android:exported="true"
+            android:exported="false"
             android:launchMode="singleInstance"
             android:theme="@style/ThemeTransparent" />
 

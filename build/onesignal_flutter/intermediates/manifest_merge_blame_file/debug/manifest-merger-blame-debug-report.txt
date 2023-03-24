@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="16"
-6-->/Volumes/Untitled/fluttersdk/flutter/.pub-cache/hosted/pub.dartlang.org/onesignal_flutter-3.4.2/android/src/main/AndroidManifest.xml
+6-->/Users/nadeem/.pub-cache/hosted/pub.dev/onesignal_flutter-3.4.2/android/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="16" />
-7-->/Volumes/Untitled/fluttersdk/flutter/.pub-cache/hosted/pub.dartlang.org/onesignal_flutter-3.4.2/android/src/main/AndroidManifest.xml
+7-->/Users/nadeem/.pub-cache/hosted/pub.dev/onesignal_flutter-3.4.2/android/src/main/AndroidManifest.xml
 8
 9</manifest>

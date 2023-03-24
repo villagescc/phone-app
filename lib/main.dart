@@ -1,10 +1,13 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:clipboard/clipboard.dart';
 
 String token = '';
 Future<void> main() async {
@@ -55,9 +58,9 @@ class _MyWebAppState extends State<MyWebApp> {
   InAppWebViewController? webViewController;
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(
-        useShouldOverrideUrlLoading: true,
-        mediaPlaybackRequiresUserGesture: false,
-      ),
+          // useShouldOverrideUrlLoading: true,
+          // mediaPlaybackRequiresUserGesture: false,
+          ),
       android: AndroidInAppWebViewOptions(
         useHybridComposition: true,
       ),
@@ -147,10 +150,30 @@ class _MyWebAppState extends State<MyWebApp> {
                 value: 1,
                 child: Text("Refresh"),
               ),
+              const PopupMenuItem(
+                value: 2,
+                child: Text("Copy"),
+              ),
+              const PopupMenuItem(
+                value: 3,
+                child: Text("Share"),
+              ),
             ],
             onSelected: (index) {
               if (index == 1) {
                 webViewController?.reload();
+              } else if (index == 2) {
+                //copy current link to clipboard and show
+                webViewController!.getUrl().then((value) {
+                  FlutterClipboard.copy(value.toString());
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text('Url copied')));
+                });
+              } else {
+                //share link (share option)
+                webViewController!.getUrl().then((value) {
+                  Share.share(value.toString());
+                });
               }
             },
           ),
@@ -164,9 +187,8 @@ class _MyWebAppState extends State<MyWebApp> {
                 children: [
                   InAppWebView(
                     key: webViewKey,
-                    initialUrlRequest: URLRequest(
-                        url: Uri.parse(
-                            "https://villages.io/accounts/sign_in/log_in/")),
+                    initialUrlRequest:
+                        URLRequest(url: Uri.parse("https://villages.io")),
                     initialOptions: options,
                     pullToRefreshController: pullToRefreshController,
                     onWebViewCreated: (controller) {
@@ -192,20 +214,20 @@ class _MyWebAppState extends State<MyWebApp> {
                           resources: resources,
                           action: PermissionRequestResponseAction.GRANT);
                     },
-                    shouldOverrideUrlLoading:
-                        (controller, navigationAction) async {
-                      var uri = navigationAction.request.url!;
-                      print(uri.toString());
-                      if (uri.toString().startsWith("https://instagram") ||
-                          uri.toString().startsWith("https://mobile.twitter") ||
-                          uri.toString().startsWith("https://t.me") ||
-                          uri.toString().startsWith("https://m.youtube") ||
-                          uri.toString().startsWith("https://github")) {
-                        await launchUrl(uri,
-                            mode: LaunchMode.externalApplication);
-                        return NavigationActionPolicy.CANCEL;
-                      }
-                    },
+                    // shouldOverrideUrlLoading:
+                    //     (controller, navigationAction) async {
+                    //   var uri = navigationAction.request.url!;
+                    //   print(uri.toString());
+                    //   if (uri.toString().startsWith("https://instagram") ||
+                    //       uri.toString().startsWith("https://mobile.twitter") ||
+                    //       uri.toString().startsWith("https://t.me") ||
+                    //       uri.toString().startsWith("https://m.youtube") ||
+                    //       uri.toString().startsWith("https://github")) {
+                    //     await launchUrl(uri,
+                    //         mode: LaunchMode.externalApplication);
+                    //     return NavigationActionPolicy.CANCEL;
+                    //   }
+                    // },
                     onLoadStop: (controller, url) async {
                       pullToRefreshController.endRefreshing();
                       setState(() {

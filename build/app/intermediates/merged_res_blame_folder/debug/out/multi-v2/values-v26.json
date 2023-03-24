@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Untitled/githubrepos/phone-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "/Volumes/Untitled/upwork/phone-app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/nadeem/.gradle/caches/transforms-3/867706dc5f2d6aaa0082d63b8fd4e65b/transformed/appcompat-1.4.1/res/values-v26/values-v26.xml",
+                    "source": "/Users/nadeem/.gradle/caches/transforms-3/5a2d0466ee868923b9ad4433da9b6e05/transformed/appcompat-1.5.1/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,130,217,431,657,896",
+                        "startOffsets": "55,130,217,381,557,796",
                         "endLines": "2,3,7,11,15,16",
                         "endColumns": "74,86,12,12,12,92",
-                        "endOffsets": "125,212,426,652,891,984"
+                        "endOffsets": "125,212,376,552,791,884"
                     }
                 }
             ]
