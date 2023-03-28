@@ -34,6 +34,8 @@
 	<string>Access required to select photos to create profile.</string>
 	<key>OneSignal_app_groups_key</key>
 	<string>group.com.villages.io.onesignal</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
@@ -57,7 +59,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UIApplicationSupportsIndirectInputEvents</key>
-	<true/>
 </dict>
 </plist>

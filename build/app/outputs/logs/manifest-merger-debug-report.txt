@@ -87,6 +87,7 @@ MERGED from [:share_plus] /Volumes/Untitled/upwork/phone-app/build/share_plus/in
 MERGED from [:url_launcher_android] /Volumes/Untitled/upwork/phone-app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-16:12
 MERGED from [:onesignal_flutter] /Volumes/Untitled/upwork/phone-app/build/onesignal_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] /Volumes/Untitled/upwork/phone-app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:webview_flutter_android] /Volumes/Untitled/upwork/phone-app/build/webview_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] /Users/nadeem/.gradle/caches/transforms-3/b45bc2e0d3d05485362e6fd03e444991/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:2:1-17:12
 MERGED from [com.onesignal:OneSignal:4.8.2] /Users/nadeem/.gradle/caches/transforms-3/1302c785795e4e42c5163fce9b3c4cab/transformed/jetified-OneSignal-4.8.2/AndroidManifest.xml:2:1-136:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/nadeem/.gradle/caches/transforms-3/e8915e6f73ff3c73c104817b9dca7424/transformed/jetified-firebase-common-ktx-20.2.0/AndroidManifest.xml:2:1-20:12
@@ -125,7 +126,7 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/nad
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/nadeem/.gradle/caches/transforms-3/742d7e688c2d0bef856339fa4c058687/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/nadeem/.gradle/caches/transforms-3/9843b22f985afa7011930a79ef3f5992/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:15:1-41:12
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/nadeem/.gradle/caches/transforms-3/53791a4fae50d93ce5dbc6066bf9e621/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.webkit:webkit:1.5.0] /Users/nadeem/.gradle/caches/transforms-3/5333ee43b3ba65b369a72b002e41862a/transformed/webkit-1.5.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.webkit:webkit:1.6.0] /Users/nadeem/.gradle/caches/transforms-3/4f431eac2f03ee34d298abd81865be88/transformed/webkit-1.6.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.browser:browser:1.4.0] /Users/nadeem/.gradle/caches/transforms-3/6ba587f18e0cfb42db299785e64a7064/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/nadeem/.gradle/caches/transforms-3/a0444e6c45dcffa334682c9d5ca8bd66/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nadeem/.gradle/caches/transforms-3/836f5a3fcfbac7b0ddb6567cf709aded/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -226,6 +227,8 @@ MERGED from [:onesignal_flutter] /Volumes/Untitled/upwork/phone-app/build/onesig
 MERGED from [:onesignal_flutter] /Volumes/Untitled/upwork/phone-app/build/onesignal_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] /Volumes/Untitled/upwork/phone-app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] /Volumes/Untitled/upwork/phone-app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:webview_flutter_android] /Volumes/Untitled/upwork/phone-app/build/webview_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:webview_flutter_android] /Volumes/Untitled/upwork/phone-app/build/webview_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] /Users/nadeem/.gradle/caches/transforms-3/b45bc2e0d3d05485362e6fd03e444991/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] /Users/nadeem/.gradle/caches/transforms-3/b45bc2e0d3d05485362e6fd03e444991/transformed/jetified-firebase-analytics-ktx-21.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.onesignal:OneSignal:4.8.2] /Users/nadeem/.gradle/caches/transforms-3/1302c785795e4e42c5163fce9b3c4cab/transformed/jetified-OneSignal-4.8.2/AndroidManifest.xml:4:5-44
@@ -302,8 +305,8 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/na
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /Users/nadeem/.gradle/caches/transforms-3/9843b22f985afa7011930a79ef3f5992/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/nadeem/.gradle/caches/transforms-3/53791a4fae50d93ce5dbc6066bf9e621/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/nadeem/.gradle/caches/transforms-3/53791a4fae50d93ce5dbc6066bf9e621/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.webkit:webkit:1.5.0] /Users/nadeem/.gradle/caches/transforms-3/5333ee43b3ba65b369a72b002e41862a/transformed/webkit-1.5.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.webkit:webkit:1.5.0] /Users/nadeem/.gradle/caches/transforms-3/5333ee43b3ba65b369a72b002e41862a/transformed/webkit-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.6.0] /Users/nadeem/.gradle/caches/transforms-3/4f431eac2f03ee34d298abd81865be88/transformed/webkit-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.6.0] /Users/nadeem/.gradle/caches/transforms-3/4f431eac2f03ee34d298abd81865be88/transformed/webkit-1.6.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.browser:browser:1.4.0] /Users/nadeem/.gradle/caches/transforms-3/6ba587f18e0cfb42db299785e64a7064/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.browser:browser:1.4.0] /Users/nadeem/.gradle/caches/transforms-3/6ba587f18e0cfb42db299785e64a7064/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/nadeem/.gradle/caches/transforms-3/a0444e6c45dcffa334682c9d5ca8bd66/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
